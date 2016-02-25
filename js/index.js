@@ -30,8 +30,8 @@ function createPhraseSvg(phrase, yOffset) {
     fill: "white",
     x: 50,
     y: yOffset,
-    "font-size": 18,
-    "font-family": "Lato"
+    "font-size": 20,
+    "font-family": 'Trebuchet MS',
   });
   text.appendChild(document.createTextNode(phrase + "..."));
   return text;
@@ -74,7 +74,7 @@ function easeInOut(t) {
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  var phrases = shuffleArray(["Feeding unicorns", "Grabbing tasks","Streaking on Floor 3", "Collating conversations", "Reticulating splines", "Pondering emptiness", "Considering alternatives", "Shuffling bits", "Celebrating moments", "Loading REAPIT Modules", "Generating phrases", "Simulating workflow", "Empowering humanity", "Being aspirational", "Doing the hokey pokey", "Bueller", "Cracking jokes", "Slacking off","Loading REAPIT Modules"]);
+  var phrases = shuffleArray(["Feeding unicorns", "Grabbing tasks","Eating Biscuits", "Collating conversations", "Reticulating splines", "Pondering emptiness", "Considering alternatives", "Shaking not Stirring", "Generating phrases", "Simulating workflow", "Empowering humanity", "Being aspirational", "Doing the hokey pokey", "Cracking jokes", "Slacking off","Loading REAPIT Modules","Grinding JavaScript", "Entering Cheat Codes",]);
   addPhrasesToDocument(phrases);
   var start_time = new Date().getTime();
   var upward_moving_group = document.getElementById("phrases");
